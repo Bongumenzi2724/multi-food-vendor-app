@@ -1,7 +1,7 @@
 const mongoose=require('mongoose')
 const OrderItemSchema=new mongoose.Schema({
     foodId:{
-        type:mongoose.Schema.Types.ObjectId,
+        type:mongoose.Types.ObjectId,
         ref:'Food'
     },
     quantity:{
@@ -23,7 +23,7 @@ const OrderItemSchema=new mongoose.Schema({
 });
 const OrderSchema=new mongoose.Schema({
     userId:{
-        type:mongoose.Schema.Types.ObjectId,
+        type:mongoose.Types.ObjectId,
         ref:'User'
     },
     orderItems:[OrderItemSchema],

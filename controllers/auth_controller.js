@@ -1,8 +1,7 @@
 const User = require("../models/User")
 const generateOtp = require("../utils/otp_generator")
 const sendEmail = require("../utils/send_email")
-const Address=require('./models/Address')
-const cryptoJS=require('crypto.js')
+const CryptoJS=require('crypto-js')
 const jwt=require('jsonwebtoken')
 module.exports={
     createUser:async(req,res)=>{
