@@ -73,7 +73,7 @@ module.exports={
                 email:user.email,
             },process.env.JWT_SECRET,{expiresIn:'1d'});
             
-            const {password,otp,...others}=user.doc;
+            const {password,createdAt,__v,updatedAt,otp,...others}=user._doc;
 
             return res.status(200).json({...others,token})
         }

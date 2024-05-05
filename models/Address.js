@@ -1,4 +1,5 @@
 const mongoose=require('mongoose')
+
 const AddressSchema=new mongoose.Schema({
     userId:{
         type:String,
@@ -29,4 +30,5 @@ const AddressSchema=new mongoose.Schema({
         required:false
     }
 });
+
 module.exports=mongoose.model('Address',AddressSchema);

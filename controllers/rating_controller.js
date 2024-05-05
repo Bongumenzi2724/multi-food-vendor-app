@@ -1,8 +1,6 @@
 const Foods = require("../models/Foods");
 const Rating = require("../models/Rating");
 const Restaurant = require("../models/Restaurant");
-const { getRandomRestuarants } = require("./restuarant_controller");
-
 module.exports={
     addRating: async(req,res)=>{
         const newRating=new Rating({

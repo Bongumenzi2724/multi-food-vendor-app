@@ -28,5 +28,4 @@ async function sendEmail(email,message){
         console.log(error.message);
     }
 }
-
 module.exports=sendEmail
